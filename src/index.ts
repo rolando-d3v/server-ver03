@@ -13,7 +13,8 @@ dotenv.config();
 //server app
 const app = express();
 
-const port = 4010;
+
+const port = process.env.PORT || '4010'
 app.listen(port, () => {
   console.log(`🔥  🚀  server personal runn port ➡️ ... ${port} 😃  ✔️`);
 });
